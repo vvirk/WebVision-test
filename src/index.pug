@@ -1,0 +1,16 @@
+include ../node_modules/bemto.pug/bemto
+
+html
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(charset='utf-8')
+        title SHOPY
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+        link(rel='stylesheet', href='css/styles.css', type='text/css')
+    body
+      div.wrapper
+        main.main
+          include includes/_header
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+      script(src="js/header-mobile-menu.js")

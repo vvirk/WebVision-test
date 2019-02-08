@@ -1,0 +1,233 @@
+.header {
+    width: 100%;
+    &-top {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        z-index: 100;
+    }
+    &-bottom {
+        position: relative;
+        width: 100%;
+        border-top: 1px $barrier solid;
+        border-bottom: 1px $barrier solid;
+        background: #fff;
+        z-index: 100;
+    }
+    &-top__inner {
+        width: 100%;
+        padding: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-bottom__inner {
+        width: 100%;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.contacts {
+    width: 100%;
+    max-width: 248px;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        color: $black;
+        font-family: HarmoniaSansProCyr, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        .fa {
+            margin-right: 14px;
+            color: $orange;
+        }
+        &:hover {
+            color: $orange;
+            transition: .5s;
+            .fa {
+                color: $black;
+                transition: .5s;
+            }
+        }
+    }
+}
+
+
+.social {
+    width: 100%;
+    max-width: 99px;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        color: $black;
+        font-size: 12px;
+        &:hover {
+            color: $orange;
+            transition: .5s;
+        }
+    }
+}
+.logo-and-menu-wrapper,
+.logo {
+    margin-right: 30px;
+}
+
+.logo-and-menu-wrapper {
+    width: 100%;
+    max-width: 646px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 120px;
+    &__img {
+        max-width: 120px;
+        max-height: 40px;
+    }
+}
+
+.menu-toggle,
+.mobile-menu {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    max-width: 447px;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        color: $black;
+        font-family: HarmoniaSansProCyr, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        &:hover {
+            transition: .5s;
+            color: $orange;
+            transform: translateY(-3px);
+        }
+        &:active {
+            color: $orange;
+        }
+    }
+}
+
+.user-buttons {
+    width: 100%;
+    max-width: 125px;
+    display: flex;
+    justify-content: space-between;
+    &__btn {
+        color: $black;
+        font-size: 18px;
+        &:hover {
+            color: $orange;
+            transition: .5s;
+        }
+    }
+
+}
+@media (max-width: 720px) {
+    .header-top__inner {
+        padding: 10px 0;
+    }
+
+    .header-bottom__inner {
+        padding: 20px 0;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .header__inner {
+        align-items: center;
+        position: relative;
+        z-index: 999;
+    }
+
+    //mobile menu
+    .menu-toggle {
+		display: block;
+        cursor: pointer;
+        &__line {
+            width: 30px;
+		    height: 2px;
+		    margin-bottom: 10px;
+		    background-color: $black;
+	        &:last-child {
+            margin: 0;
+            }
+        }
+        &:hover {
+            color: $orange;
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+    }
+
+    .mobile-menu{
+        position: fixed;
+		width: 100%;
+        height: 100vh;
+        padding-top: 131px;
+        top: 0;
+        left: 0;
+        z-index: 99;
+		text-align: center;
+		transform: translate(0, -999%);
+        transition: all 0.2s ease-in-out;
+        overflow-y: scroll;
+        &__link {
+		    display: block;
+            padding: 15px 20px;
+            color: $black;
+            font-family: HarmoniaSansProCyr, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-bottom: 1px $barrier solid;
+	        &:hover {
+		    color: $orange;
+            transition: .5s;
+            transform: scale(1.1);
+            }
+        }
+	}
+
+	.menu-toggle_active {
+        display: block;
+		transform: translate(0, 0);
+		transition: all 0.2s ease-in-out;
+	}
+}
+
+@media (max-width: 420px) {
+    .contacts {
+        justify-content: flex-start;
+        &__link-desc {
+            display: none;
+        }
+    }
+
+    .social {
+        max-width: 70px;
+        &__link {
+            font-size: 14px;
+        }
+    }
+
+}
