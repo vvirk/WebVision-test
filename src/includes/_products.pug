@@ -9,53 +9,58 @@ section.products#products
             div.product-large
               img.product-large__img(src="./images/Product-large2.png" alt="Product image")
             div.product-large
-              img.product-large__img(src="./images/Product-large3.png" alt="Product image")    
+              img.product-large__img(src="./images/Product-large3.png" alt="Product image")
+            div.product-large
+              img.product-large__img(src="./images/Product-large4.png" alt="Product image")      
           div.product-min__sl 
             a.product-min(href="#product-large-slide")
               img.product-min__img(src="./images/Product-min.png" alt="Product miniature image")
             a.product-min(href="#product-large-slide")
               img.product-min__img(src="./images/Product-min2.png" alt="Product miniature image")
             a.product-min(href="#product-large-slide")
-              img.product-min__img(src="./images/Product-min3.png" alt="Product miniature image")    
+              img.product-min__img(src="./images/Product-min3.png" alt="Product miniature image")
+            a.product-min(href="#product-large-slide")
+              img.product-min__img(src="./images/Product-min4.png" alt="Product miniature image")      
         div.product-details
           h1.product-details__title FULL WINTER KIT
           h2.product-details__subtitle Half Jacket + Skiny Trousers + Boot leather
           div.product-details__desc
             p Lorem Ipsum is simply dummy text of the printing and typesetting industry
             p Lorem Ipsum is simply dummy text of the printing
-            p and typesetting industry
-          nav.product-details__nav
-            div.choose-size
-              span.choose-desc Choose Size
-              ul.choose-size__list
-                li
-                  a.choose-size__size(href="") s
-                li  
-                  span.hyphen -
-                li  
-                  a.choose-size__size(href="") m
-                li
-                  span.hyphen -
-                li  
-                  a.choose-size__size(href="") l
-                li  
-                  span.hyphen -
-                li  
-                  a.choose-size__size(href="") xl
-            div.choose-quantity
-              span.choose-desc Choose Quantity
-              div.count
-                span.count__elem +
-                span.count__result 3
-                span.count__elem -
-          div.price-and-tools-wrap
-            div.price
-              span Price : $120
-            div.tools
-              a.tool(href="#")
-                i.fa.fa-globe(aria-hidden="true")
-              a.tool(href="#")
-                i.fa.fa-cart-plus(aria-hidden="true")
-              a.tool(href="#")
-                i.fa.fa-heart-o(aria-hidden="true")
-              a.button-order(href="#") Order Now     
+            p and typesetting industry  
+          form.product-details__form(action="#", method="get")
+            nav.product-details__nav
+              div.choose-size
+                span.choose-desc Choose Size
+                ul.choose-size__list
+                  li
+                    a.choose-size__size(href="") s
+                  li  
+                    span.hyphen -
+                  li  
+                    a.choose-size__size(href="") m
+                  li
+                    span.hyphen -
+                  li  
+                    a.choose-size__size(href="") l
+                  li  
+                    span.hyphen -
+                  li  
+                    a.choose-size__size(href="") xl
+              div.choose-quantity
+                span.choose-desc Choose Quantity
+                div.count
+                  span.count__elem.count__elem-increment +
+                  input.count__result(type="text" value="1" disabled)
+                  span.count__elem.count__elem-decrement -
+            div.price-and-tools-wrap
+              div.price
+                span Price : $120
+              div.tools
+                a.tool(href="#")
+                  i.fa.fa-globe(aria-hidden="true")
+                a.tool(href="#")
+                  i.fa.fa-cart-plus(aria-hidden="true")
+                a.tool#like(href="#like")
+                  i.fa.fa-heart-o(aria-hidden="true")
+                a.button-order(href="#") Order Now     

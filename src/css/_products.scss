@@ -67,7 +67,7 @@
     &__img {
         max-width: 100%;
         max-height: 100%;
-        margin: 0 auto;
+        margin: auto;
     }
     &:hover {
         background-color: $orange;
@@ -180,8 +180,16 @@
     &__elem:hover {
         @include orange-half-second;
     }
-    &__result:hover {
-        @include orange-half-second;
+    &__result {
+        max-width: 20px;
+        color: $orange;
+        background: inherit;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        border: none;
+        outline: none;
+        cursor: default;
     }
 }
 
@@ -207,6 +215,9 @@
     font-size: 18px;
     &:hover {
         @include orange-half-second;
+    }
+    .fa-heart {
+        color: #ff0000;
     }
 }
 
