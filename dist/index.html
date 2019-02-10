@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta charset="utf-8"/>
     <title>SHOPY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   </head>
@@ -31,7 +33,7 @@
                   </div>
                   <nav class="menu"><a class="menu__link" href="#">Home</a><a class="menu__link" href="#products">Products</a><a class="menu__link" href="#">Hot Deals</a><a class="menu__link" href="#">About</a><a class="menu__link" href="#">Contact</a></nav>
                 </div>
-                <div class="user-buttons"><a class="user-buttons__btn user-buttons__btn_search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a><a class="user-buttons__btn user-buttons__btn_user" href="#"><i class="fa fa-user" aria-hidden="true"></i></a><a class="user-buttons__btn user-buttons__btn_cart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true">   </i></a></div>
+                <div class="user-buttons"><a class="user-buttons__btn user-buttons__btn_search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a><a class="user-buttons__btn user-buttons__btn_user" href="#"><i class="fa fa-user" aria-hidden="true"></i></a><a class="user-buttons__btn user-buttons__btn_cart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="user-buttons__btn_cart-counter">5    </span></a></div>
               </div>
             </div>
           </div>
@@ -50,8 +52,12 @@
             <div class="products__inner">
               <div class="product-card">
                 <div class="product-look">
-                  <div class="product-large"><img class="product-large__img" src="./images/Product-large.png" alt="Product image"/></div>
-                  <div class="product-min-wrapper"> <a class="product-min" href="#"><img class="product-min__img" src="./images/Product-min.png" alt="Product miniature image"/></a><a class="product-min" href="#"><img class="product-min__img" src="./images/Product-min2.png" alt="Product miniature image"/></a><a class="product-min" href="#"><img class="product-min__img" src="./images/Product-min3.png" alt="Product miniature image"/></a></div>
+                  <div class="product-large__sl">
+                    <div class="product-large" id="product-large-slide"><img class="product-large__img" src="./images/Product-large.png" alt="Product image"/></div>
+                    <div class="product-large"><img class="product-large__img" src="./images/Product-large2.png" alt="Product image"/></div>
+                    <div class="product-large"><img class="product-large__img" src="./images/Product-large3.png" alt="Product image"/></div>
+                  </div>
+                  <div class="product-min__sl"> <a class="product-min" href="#product-large-slide"><img class="product-min__img" src="./images/Product-min.png" alt="Product miniature image"/></a><a class="product-min" href="#product-large-slide"><img class="product-min__img" src="./images/Product-min2.png" alt="Product miniature image"/></a><a class="product-min" href="#product-large-slide"><img class="product-min__img" src="./images/Product-min3.png" alt="Product miniature image"/></a></div>
                 </div>
                 <div class="product-details">
                   <h1 class="product-details__title">FULL WINTER KIT</h1>
@@ -89,6 +95,8 @@
       </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/header-mobile-menu.js"></script>
+    <script src="js/sliders.js"></script>
   </body>
 </html>

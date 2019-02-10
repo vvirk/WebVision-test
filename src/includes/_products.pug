@@ -3,14 +3,19 @@ section.products#products
     div.products__inner
       div.product-card
         div.product-look
-          div.product-large
-            img.product-large__img(src="./images/Product-large.png" alt="Product image")
-          div.product-min-wrapper 
-            a.product-min(href="#")
+          div.product-large__sl
+            div.product-large#product-large-slide
+              img.product-large__img(src="./images/Product-large.png" alt="Product image")
+            div.product-large
+              img.product-large__img(src="./images/Product-large2.png" alt="Product image")
+            div.product-large
+              img.product-large__img(src="./images/Product-large3.png" alt="Product image")    
+          div.product-min__sl 
+            a.product-min(href="#product-large-slide")
               img.product-min__img(src="./images/Product-min.png" alt="Product miniature image")
-            a.product-min(href="#")
+            a.product-min(href="#product-large-slide")
               img.product-min__img(src="./images/Product-min2.png" alt="Product miniature image")
-            a.product-min(href="#")
+            a.product-min(href="#product-large-slide")
               img.product-min__img(src="./images/Product-min3.png" alt="Product miniature image")    
         div.product-details
           h1.product-details__title FULL WINTER KIT

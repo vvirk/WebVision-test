@@ -1,0 +1,1 @@
+$(".product-large__sl").slick({arrows:!1,asNavFor:".product-min__sl",slidesToShow:1}),$(".product-min__sl").slick({arrows:!1,slidesToShow:3,asNavFor:".product-large__sl",focusOnSelect:!0});

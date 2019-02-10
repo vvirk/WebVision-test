@@ -19,3 +19,8 @@
     border-top: 1px $barrier solid;
     border-bottom: 1px $barrier solid;
 }
+
+@mixin orange-half-second {
+    color: $orange;
+    transition: .5s;
+}

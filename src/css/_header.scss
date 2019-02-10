@@ -46,8 +46,7 @@
             color: $orange;
         }
         &:hover {
-            color: $orange;
-            transition: .5s;
+            @include orange-half-second;
             .fa {
                 color: $black;
                 transition: .5s;
@@ -65,8 +64,7 @@
         color: $black;
         font-size: 12px;
         &:hover {
-            color: $orange;
-            transition: .5s;
+            @include orange-half-second;
         }
     }
 }
@@ -78,7 +76,8 @@
 .logo-and-menu-wrapper {
     width: 100%;
     max-width: 646px;
-    @include space-between-and-items-center;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -105,12 +104,10 @@
         font-weight: 400;
         text-transform: capitalize;
         &:hover {
-            transition: .5s;
-            color: $orange;
-            transform: translateY(-3px);
+            @include orange-half-second;
         }
         &:active {
-            color: $orange;
+            @include orange-half-second;
         }
     }
 }
@@ -120,12 +117,26 @@
     max-width: 125px;
     @include space-between;
     &__btn {
+        position: relative;
         color: $black;
         font-size: 18px;
         &:hover {
-            color: $orange;
-            transition: .5s;
+            @include orange-half-second;
         }
+    }
+    &__btn_cart {
+        color: $orange;
+    }
+    &__btn_cart-counter {
+        position: absolute;
+        top: -15px;
+        width: 18px;
+        height: 18px;
+        @include flex-center;
+        color: #fff;
+        font-size: 10px;
+        background-color: $black;
+        border-radius: 50%;
     }
 
 }
@@ -191,8 +202,7 @@
             text-transform: uppercase;
             border-bottom: 1px $barrier solid;
 	        &:hover {
-		    color: $orange;
-            transition: .5s;
+            @include orange-half-second;
             transform: scale(1.1);
             }
         }
