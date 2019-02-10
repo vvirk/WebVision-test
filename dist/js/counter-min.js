@@ -1,1 +1,1 @@
-$(document).ready(function(){var c=0;$(".count__elem-increment").click(function(){c>98?c=99:c++,$(".count__result").val(c)}),$(".count__elem-decrement").click(function(){c<2?c=1:c--,$(".count__result").val(c)})});
+$(document).ready(function(){var c=1;$(".count__elem-increment").click(function(){c>98?c=99:c++,$(".count__result").val(c)}),$(".count__elem-decrement").click(function(){c<2?c=1:c--,$(".count__result").val(c)})});

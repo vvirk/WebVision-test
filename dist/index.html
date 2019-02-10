@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   </head>
   <body>
@@ -52,12 +53,7 @@
             <div class="products__inner">
               <div class="product-card">
                 <div class="product-look">
-                  <div class="product-large__sl">
-                    <div class="product-large" id="product-large-slide"><img class="product-large__img" src="./images/Product-large.png" alt="Product image"/></div>
-                    <div class="product-large"><img class="product-large__img" src="./images/Product-large2.png" alt="Product image"/></div>
-                    <div class="product-large"><img class="product-large__img" src="./images/Product-large3.png" alt="Product image"/></div>
-                    <div class="product-large"><img class="product-large__img" src="./images/Product-large4.png" alt="Product image"/></div>
-                  </div>
+                  <div class="product-large__sl product-gallery"><a class="product-large product-gallery__item" id="product-large-slide" href="./images/Product-large.png" data-fancybox="gallery"><img class="product-large__img" src="./images/Product-large.png" alt="Product image"/></a><a class="product-large product-gallery__item" href="./images/Product-large2.png" data-fancybox="gallery"><img class="product-large__img" src="./images/Product-large2.png" alt="Product image"/></a><a class="product-large product-gallery__item" href="./images/Product-large3.png" data-fancybox="gallery"><img class="product-large__img" src="./images/Product-large3.png" alt="Product image"/></a><a class="product-large product-gallery__item" href="./images/Product-large4.png" data-fancybox="gallery"><img class="product-large__img" src="./images/Product-large4.png" alt="Product image"/></a></div>
                   <div class="product-min__sl">
                     <div class="product-min__sl-slide"> <a class="product-min" href="#product-large-slide"><img class="product-min__img" src="./images/Product-min.png" alt="Product miniature image"/></a></div>
                     <div class="product-min__sl-slide"><a class="product-min" href="#product-large-slide"><img class="product-min__img" src="./images/Product-min2.png" alt="Product miniature image"/></a></div>
@@ -77,13 +73,21 @@
                     <nav class="product-details__nav">
                       <div class="choose-size"><span class="choose-desc">Choose Size</span>
                         <ul class="choose-size__list">
-                          <li><a class="choose-size__size" href="">s</a></li>
+                          <li>
+                            <input class="choose-size__size" type="text" value="s" disabled="disabled"/>
+                          </li>
                           <li> <span class="hyphen">-</span></li>
-                          <li> <a class="choose-size__size" href="">m</a></li>
+                          <li> 
+                            <input class="choose-size__size" type="text" value="m" disabled="disabled"/>
+                          </li>
                           <li><span class="hyphen">-</span></li>
-                          <li> <a class="choose-size__size" href="">l</a></li>
+                          <li> 
+                            <input class="choose-size__size" type="text" value="l" disabled="disabled"/>
+                          </li>
                           <li> <span class="hyphen">-</span></li>
-                          <li> <a class="choose-size__size" href="">xl</a></li>
+                          <li> 
+                            <input class="choose-size__size" type="text" value="xl" disabled="disabled"/>
+                          </li>
                         </ul>
                       </div>
                       <div class="choose-quantity"><span class="choose-desc">Choose Quantity</span>
@@ -106,9 +110,11 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
     <script src="js/header-mobile-menu.js"></script>
     <script src="js/sliders.js"></script>
     <script src="js/like.js"></script>
     <script src="js/counter.js"></script>
+    <script src="js/choose-size.js"></script>
   </body>
 </html>

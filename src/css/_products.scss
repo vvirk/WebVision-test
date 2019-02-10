@@ -39,6 +39,7 @@
 .product-large {
     @include flex-center;
     max-height: 275px;
+    outline: none;
     &__img {
         max-height: 275px;
         margin: 0 auto;
@@ -141,22 +142,24 @@
         @include space-between;
     }
     &__size {
+        max-width: 20px;
+        background: inherit;
+        border: none;
+        outline: none;
+        overflow: visible;
         color: $black;
         font-size: 14px;
+        text-align: center;
         text-transform: uppercase;
+        cursor: pointer;
         &:hover {
-            font-size: 18px;
-            @include orange-half-second;
-        }
-        &:active {
             @include orange-half-second;
         }
     }
-    
-}
-
-.hyphen {
-    margin: 0 7px;
+    &__size_active {
+        font-size: 18px;
+        @include orange-half-second;
+    }  
 }
 
 .choose-quantity {

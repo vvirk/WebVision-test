@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var val = 0;
+    var val = 1;
     $('.count__elem-increment').click(function() {
         if (val>98) {
             val=99

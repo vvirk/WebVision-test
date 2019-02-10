@@ -3,14 +3,14 @@ section.products#products
     div.products__inner
       div.product-card
         div.product-look
-          div.product-large__sl
-            div.product-large#product-large-slide
+          div.product-large__sl.product-gallery
+            a.product-large#product-large-slide.product-gallery__item(href="./images/Product-large.png" data-fancybox="gallery")
               img.product-large__img(src="./images/Product-large.png" alt="Product image")
-            div.product-large
+            a.product-large.product-gallery__item(href="./images/Product-large2.png" data-fancybox="gallery")
               img.product-large__img(src="./images/Product-large2.png" alt="Product image")
-            div.product-large
+            a.product-large.product-gallery__item(href="./images/Product-large3.png" data-fancybox="gallery")
               img.product-large__img(src="./images/Product-large3.png" alt="Product image")
-            div.product-large
+            a.product-large.product-gallery__item(href="./images/Product-large4.png" data-fancybox="gallery")
               img.product-large__img(src="./images/Product-large4.png" alt="Product image")      
           div.product-min__sl
             div.product-min__sl-slide 
@@ -38,19 +38,19 @@ section.products#products
                 span.choose-desc Choose Size
                 ul.choose-size__list
                   li
-                    a.choose-size__size(href="") s
+                    input.choose-size__size(type="text" value="s" disabled)
                   li  
                     span.hyphen -
                   li  
-                    a.choose-size__size(href="") m
+                    input.choose-size__size(type="text" value="m" disabled)
                   li
                     span.hyphen -
                   li  
-                    a.choose-size__size(href="") l
+                    input.choose-size__size(type="text" value="l" disabled)
                   li  
                     span.hyphen -
                   li  
-                    a.choose-size__size(href="") xl
+                    input.choose-size__size(type="text" value="xl" disabled)
               div.choose-quantity
                 span.choose-desc Choose Quantity
                 div.count
