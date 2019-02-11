@@ -32,30 +32,24 @@ section.products#products
             p Lorem Ipsum is simply dummy text of the printing and typesetting industry
             p Lorem Ipsum is simply dummy text of the printing
             p and typesetting industry  
-          form.product-details__form(action="#", method="get")
+          form.product-details__form(action="", method="get")
             nav.product-details__nav
               div.choose-size
                 span.choose-desc Choose Size
                 ul.choose-size__list
-                  li
-                    input.choose-size__size(type="text" value="s" disabled)
-                  li  
-                    span.hyphen -
-                  li  
-                    input.choose-size__size(type="text" value="m" disabled)
-                  li
-                    span.hyphen -
-                  li  
-                    input.choose-size__size(type="text" value="l" disabled)
-                  li  
-                    span.hyphen -
-                  li  
-                    input.choose-size__size(type="text" value="xl" disabled)
+                  li.choose-size__size.choose-size__size_active(value="s") s  
+                  li.hyphen -
+                  li.choose-size__size(value="m") m  
+                  li.hyphen -  
+                  li.choose-size__size(value="l") l  
+                  li.hyphen -  
+                  li.choose-size__size(value="xl") xl
+                input#size(type="hidden" name="size" value="")  
               div.choose-quantity
                 span.choose-desc Choose Quantity
                 div.count
                   span.count__elem.count__elem-increment +
-                  input.count__result(type="text" value="1" disabled)
+                  input.count__result(name="number" type="text" value="1" readonly)
                   span.count__elem.count__elem-decrement -
             div.price-and-tools-wrap
               div.price
@@ -67,4 +61,4 @@ section.products#products
                   i.fa.fa-cart-plus(aria-hidden="true")
                 a.tool#like(href="#like")
                   i.fa.fa-heart-o(aria-hidden="true")
-                a.button-order(href="#") Order Now     
+                input.button-order(type="submit" value="Order Now")     

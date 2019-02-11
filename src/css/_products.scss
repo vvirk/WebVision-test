@@ -125,8 +125,8 @@
     }
     &__nav {
         width: 100%;
-        margin-bottom: 40px;
-        padding: 41px 0 39px 0;
+        margin-bottom: 38px;
+        padding: 38px 0 39px 3px;
         @include space-between;
         @include barrier;
     }
@@ -135,22 +135,19 @@
 .choose-size {
     width: 100%;
     max-width: 220px;
-    @include space-between;
+    @include space-between-and-items-center;
     &__list {
         width: 100%;
         max-width: 105px;
-        @include space-between;
+        @include space-between-and-items-center;
     }
     &__size {
         max-width: 20px;
-        background: inherit;
-        border: none;
-        outline: none;
-        overflow: visible;
         color: $black;
         font-size: 14px;
         text-align: center;
         text-transform: uppercase;
+        overflow: visible;
         cursor: pointer;
         &:hover {
             @include orange-half-second;
@@ -160,6 +157,10 @@
         font-size: 18px;
         @include orange-half-second;
     }  
+}
+
+.hyphen {
+    cursor: default;
 }
 
 .choose-quantity {
@@ -199,6 +200,7 @@
 .price-and-tools-wrap {
     width: 100%;
     @include space-between-and-items-center;
+    margin-left: 3px;
 }
 
 .price {
@@ -216,16 +218,25 @@
 .tool {
     color: $black;
     font-size: 18px;
+    outline: none;
     &:hover {
         @include orange-half-second;
     }
     .fa-heart {
-        color: #ff0000;
+        color: $red;
+    }
+}
+
+#like{
+    font-size: 19px;
+    &:hover {
+        color: $red;
+        transition: .5s;
     }
 }
 
 .button-order {
-    padding: 15px 23px;
+    padding: 14px 23px;
     color: #fff;
     font-family: HarmoniaSansProCyr, sans-serif;
     font-size: 18px;
@@ -233,6 +244,8 @@
     border: 1px $orange solid;
     border-radius: 25px;
     background-color: $orange;
+    outline: none;
+    cursor: pointer;
     &:hover {
         background-color: #fff;
         @include orange-half-second;

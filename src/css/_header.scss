@@ -78,6 +78,8 @@
     max-width: 646px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    @include space-between-and-items-center;
 }
 
 .logo {
